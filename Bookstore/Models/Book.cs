@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace Models;
-public class Issue : TextEntry
+public class Book : TextEntryBook
 {
     private string title = "";
     public string Title 
@@ -15,14 +15,15 @@ public class Issue : TextEntry
             }
             title = value;
         }
-    }
+    }         
 
-    public bool IsClosed { get; set; }
+    // public bool IsClosed { get; set; }
 
-    public List<Answer> Answers { get; set; }
+    // public List<Answer> Answers { get; set; }
 
     public override string ToString()
     {
         return $"Title: {Title} \nDate Created: {DateCreated} \nContent: {Content} \nScore: {Score}";
     }
+
 }

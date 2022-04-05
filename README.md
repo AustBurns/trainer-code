@@ -1,2 +1,2 @@
-# trainer-code
-This repository is to store demo's and notes. Let Juniper know if it is missing anything that she has promised.
+# P-0
+This is the code to create a bookstore for users to shop in.

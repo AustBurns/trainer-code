@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Models;
 
-public abstract class TextEntry
+public abstract class TextEntryBook
 {
     public DateTime DateCreated { get; set; } = DateTime.Now;
     private string content = "";
