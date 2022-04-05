@@ -1,9 +1,10 @@
 ﻿using UI;
-//using BL;
+using BL;
 using DL;
 
 
 string connectionString = File.ReadAllText("./connectionString.txt");
 
-
-new MainMenu().Start();
+IRepository repo = new DBRepository(connectionString);
+ISLBL b1 = new SLBL(repo);
+new MainMenu(b1).Start();
